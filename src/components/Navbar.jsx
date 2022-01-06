@@ -19,7 +19,7 @@ export const Navbar = () => {
                         </li>
 
                         <li>
-                            <Link to ="/add" className="btn"> Add new </Link>
+                            <Link to ="/add" className="btn btn-main"> + Add  </Link>
                         </li>
 
                     </ul>   

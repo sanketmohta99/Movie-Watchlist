@@ -6,12 +6,15 @@ export const Add = ()=>{
     const [srchqry, setSrchqry]=useState("");
     const [arr,setArr]=useState([]);
     const [nofr,setNofr]=useState(0);
+    // nofr is no of results
+
+    
 
     const querychanger= (e)=>{
         e.preventDefault(); 
         setSrchqry(e.target.value); 
         
-        let apiobj;
+        
 
         fetch(`https://api.themoviedb.org/3/search/movie?api_key=d27ff689a662f0494a5f0d9b748b3e29&language=en-US&page=1&include_adult=false&query=${e.target.value}`)
         .then( (res)=>res.json())
